@@ -11,7 +11,7 @@ const filesToLink = [
   ".husky",
 ];
 
-const sourceDir = path.resolve(__dirname, '../../..', 'templates/bun');
+const sourceDir = path.resolve(__dirname, '../..', '@amarkdown-template-bun');
 for (const targetDir of needLinkDirs) {
   if (!fs.existsSync(targetDir)) {
     fs.mkdirSync(targetDir, { recursive: true });

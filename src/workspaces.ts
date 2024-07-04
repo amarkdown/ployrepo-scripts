@@ -1,12 +1,11 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
-export const workspaces = ['templates', 'libs', 'libs'];
 
 function findFirstLevelDirs(rootDirs: string[]): string[] {
   const dirs: string[] = [];
   for (const dir of rootDirs) {
-    const dirPath = path.resolve(__dirname, '../../', dir);
+    const dirPath = path.resolve(__dirname, '../..');
     const files = fs.readdirSync(dirPath);
     for (const file of files) {
       const theDir = path.join(dirPath, file);
@@ -20,6 +19,5 @@ function findFirstLevelDirs(rootDirs: string[]): string[] {
   }
   return dirs;
 }
-export const allDirs = findFirstLevelDirs(workspaces);
-export const needLinkDirs = allDirs.filter(x=> x.indexOf('templates/bun') === -1);
-console.log('--debug--', allDirs);
+export const allDirs = findFirstLevelDirs(['./']);
+export const needLinkDirs = allDirs.filter(x=> x.indexOf('@amarkdown-template-bun') === -1);

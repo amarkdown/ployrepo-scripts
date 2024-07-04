@@ -2,6 +2,10 @@
   "name": "global-scripts",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "links": "bun run src/links.ts",
+    "installs": "bun run src/installs.ts"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
