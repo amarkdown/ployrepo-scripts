@@ -7,10 +7,15 @@
 		"enabled": true,
 		"rules": {
 			"recommended": true
-		}
+		},
 	},
 	"files": {
-		"include": ["./*.ts", "/*.tsx", "./**/*.tsx", "./**/*.ts"],
+		"include": [
+			"./*.ts",
+			"/*.tsx",
+			"./**/*.tsx",
+			"./**/*.ts"
+		],
 		"ignore": [
 			"node_modules",
 			"*.json",
