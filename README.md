@@ -1,11 +1,11 @@
-# Ployrepo Scripts
+# Polyrepo Scripts
 
-sync some ployrepo scripts
+sync some polyrepo scripts
 
 ### .env
 
 ```
-LINK_SOURCE="<source-path>"
+LINK_WORKSPACE="<workspace-path>"
 # example:
-# LINK_SOURCE="/Users/pillar/long-term-solution/template-bun"
+# LINK_WORKSPACE="/Users/pillar/long-term-solution"
 ```

@@ -1,9 +1,18 @@
 {
-  "name": "global-scripts",
+  "name": "@polyrepo/polyrepo-scripts",
   "module": "index.ts",
   "type": "module",
+  "polyCopy": {
+    "@polyrepo/template-bun": [
+      ".gitignore",
+      "biome.json",
+      ".husky",
+      "tsconfig.json",
+      "tsconfig.ci.json"
+    ]
+  },
   "scripts": {
-    "links": "bun run src/links.ts",
+    "copy": "bun run src/copys.ts",
     "installs": "bun run src/installs.ts"
   },
   "devDependencies": {
@@ -13,6 +22,7 @@
     "typescript": "^5.5.3"
   },
   "dependencies": {
+    "@polyrepo/env": "latest",
     "dotenv": "^16.4.5"
   }
 }

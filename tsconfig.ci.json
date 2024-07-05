@@ -7,11 +7,6 @@
 			"ES2023"
 		],
 		"baseUrl": ".",
-		"paths": {
-			"@polyrepo/*": [
-				"../*/src"
-			]
-		},
 		"target": "ESNext",
 		"module": "ESNext",
 		"moduleDetection": "force",
